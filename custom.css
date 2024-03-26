@@ -1,0 +1,605 @@
+/*All Pages CSS*/
+body{
+    background-color: #ececec;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: #38512e;
+    z-index: 5;
+    position: relative;
+    position: sticky;
+    top: 0;
+    font-weight: 200;
+}
+.logo{
+    height: 90px;
+    width: 90px;
+}
+.nav-item{
+    color: #fff;
+    font-family: "Archivo", sans-serif;
+    font-weight: 200;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+/*Shopping Cart*/
+.cart{
+    /*background-color: #fff;*/
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.cartAmount{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #a39ece;
+    
+}
+
+/*Product Cards CSS*/
+.row{
+    width: 90%;
+    margin: auto;
+}
+.card{
+    border: 2px solid #38512e;
+    font-family: "Archivo", sans-serif;
+}
+.badge{
+    background-color: #38512e;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: "Archivo", sans-serif;
+}
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+.buttons{
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+}
+.bi-dash-lg{
+    color: red;
+}
+.bi-plus-lg{
+    color: green;
+}
+.overlayOutter{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #38512e;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+    background-color: #dce9bd;
+    transition: all ease 0.3s;
+}
+.overlay{
+    visibility: hidden;
+}
+.overlayOutter:hover .overlay{
+    visibility: visible;
+    animation: fade 0.7s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*Home page CSS*/
+.banner{
+    background-color: #000;
+}
+
+.carItem1,.carItem2,.carItem3{
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    font-family: "Archivo", sans-serif;
+}
+.carItem1 span,.carItem2 span,.carItem3 span{
+    font-family: "Reenie Beanie", cursive;
+    font-size: 1.4em;
+}
+
+.carItem1{
+    background-image: url("img/banner/img1.jpg");
+
+}
+.carItem2{
+    background-image: url("img/banner/img2.jpeg");
+}
+.carItem3{
+    background-image: url("img/banner/img3.jpg");
+}
+.innerBanner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.innerBanner h1{
+    font-size: 60px;
+}
+.innerBanner a{
+    padding: 15px 35px;
+    border: 2px solid #fff;
+    color: #000;
+    border-radius: 10px;
+    transition: all ease 0.6s;
+    background-color: #fff;
+
+    font-family: "Archivo", sans-serif;
+}
+.innerBanner a:hover{
+    padding: 20px 40px;
+    background-color: #dce9bd;
+    color: #000;
+    transition: all ease 0.6s;
+}
+.productsBtn{
+    width: 60%;
+    margin: auto;
+    padding: 8px 12px;
+    border: 2px solid #38512e;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all ease 0.6s;
+
+    font-family: "Archivo", sans-serif;
+}
+.productsBtn a{
+    color: #000;
+}
+.productsBtn:hover{
+    background-color: #a39ece;
+    width: 70%;
+    color: #fff;
+    padding: 15px 12px;
+    transition: all ease 0.6s;
+    font-family: "Archivo", sans-serif;
+}
+#featured{
+    padding: 15px 0;
+    width: 90%;
+    margin: auto;
+    font-family: "Reenie Beanie", cursive;
+}
+#newProdHome, .aboutSection{
+    padding-top: 40px;
+    font-family: "Reenie Beanie", cursive;
+}
+
+
+.aboutSection{
+    height: fit-content;
+    width: 100%;
+}
+.aboutSection p{
+    font-family: "Archivo", sans-serif;
+}
+
+
+.form{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    font-family: "Reenie Beanie", cursive;
+}
+.form button{
+    background-color: transparent;
+    border: 2px solid #38512e;
+    color: #000;
+    width: fit-content;
+    transition: all ease 0.6s;
+    font-family: "Archivo", sans-serif;
+}
+.form button:hover{
+    background-color: #dce9bd;
+    border: 2px solid #38512e;
+    color: #000;
+    padding: 10px 30px;
+    transition: all ease 0.6s;
+}
+.form input, .form label, .form textarea{
+    font-family: "Archivo", sans-serif;
+}
+/*Products Page CSS*/
+.prodbannerText{
+    text-align: center;
+    margin: 30px;
+    font-family: "Reenie Beanie", cursive;
+}
+.heading{
+    background-color: #dce9bd;
+    padding: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    border-top: 2px solid #38512e;
+    border-bottom: 2px solid #38512e;
+    font-family: "Reenie Beanie", cursive;
+}
+ul.productsMenu a{
+    text-decoration: none;
+    color: #38512e;
+    text-transform: uppercase;
+    transition: all ease 0.6s;
+    font-family: "Archivo", sans-serif;
+}
+ul.productsMenu a:hover{
+    background-color: #a39ece;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all ease 0.6s;
+}
+ul.productsMenu {
+    list-style-type: none;
+    margin: 20px;
+    margin-left: 15vw;
+
+}
+
+
+/*FAQ Page CSS*/
+.linksHeader{
+    text-align: center;
+    margin: 30px;
+    font-family: "Reenie Beanie", cursive;
+}
+.links{
+    text-align: left;  
+    border-radius: 30px;
+    font-family: "Archivo", sans-serif;
+}
+.links h3{
+    margin-left: 10px;
+}
+.links h5{
+    margin-left: 30px;
+}
+ol{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    font-style:normal;
+    list-style-type: none;
+}
+ol>li>a:hover{
+    color: white;
+    background-color: #38512e;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all ease 0.6s;
+}
+ol>li>a{
+    color: #38512e;
+    transition: all ease 0.6s;
+}
+
+#Q1,#Q2,#Q3,#Q4,#Q5{
+    height: 100vh;
+    margin-top: 20px;
+    position: relative;
+    font-family: "Archivo", sans-serif;
+}
+.q-inner{
+    padding: 20px;
+    height: auto;
+    background-color: #ececec;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+}
+.q-inner h3{
+    color: #A39ECE;
+    font-family: "Reenie Beanie", cursive;
+}
+.q-inner a{
+    color: #A39ECE;
+}
+.parallax1,.parallax2,.parallax3,.parallax4,.parallax5{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1{
+    background-image: url("img/parallaxImg/img1.jpg");
+}
+.parallax2{
+    background-image: url("img/parallaxImg/img2.jpg");
+}
+.parallax3{
+    background-image: url("img/parallaxImg/img3.jpg");
+}
+.parallax4{
+    background-image: url("img/parallaxImg/img4.jpg");
+}
+.parallax5{
+    background-image: url("img/parallaxImg/img5.jpg");
+}
+
+
+/*Shopping Cart Page CSS*/
+.cart{
+	/*display: flex;*/
+    height: fit-content;
+    position: relative;
+    font-family: "Archivo", sans-serif;
+}
+.products{
+	/*flex: 0.7;*/
+    margin: auto;
+}
+.product{
+	display: flex;
+	width: 80%;
+    margin: auto;
+	height: auto;
+	overflow:hidden;
+	border: 1px solid silver;
+	margin-bottom: 20px;
+}
+.product > img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.product-info{
+	padding: 20px;
+	width: 100%;
+    font-size: 16px;
+	position: relative;
+}
+.product-name, .product-price{
+	margin-bottom: 20px;
+}
+.product-price{
+    font-size: 18px;
+}
+.product-remove{
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	padding: 8px 18px;
+	background-color: transparent;
+    border: 2px solid #38512e;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px;
+}
+.product-remove:hover{
+    background-color: #dce9bd;
+    border: 2px solid #38512e;
+    color: #000;
+    transition: all ease 0.6s;
+}
+
+
+.product-quantity > input{
+	width: 120px;
+	padding: 5px;
+	text-align: right;
+}
+
+@media screen and (max-width: 820px){
+    .product-remove{
+        position: absolute;
+	    bottom: -50px;
+	    right: 10px;
+    }
+    
+}
+
+.cart-total{
+    float: right;
+	padding: 20px;
+    margin-right: 140px;
+	height:auto;
+    width: fit-content;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 40px;
+    width: 300px;
+	line-height: 40px;
+	background-color: #38512e;
+	color: white;
+    border-radius: 10px;
+	text-decoration: none;
+}
+
+.cart-total a:hover{
+	background-color: #dce9bd;
+    color: #38512e;
+    transition: all ease 0.6s;
+}
+
+
+/*Checkout page*/
+#checkout-order-form {
+	margin: auto;
+    width: 90%;
+    font-family: "Archivo", sans-serif;
+}
+
+#checkout-order-form fieldset {
+	border: 2px solid #38512e;
+	border-radius: 6px;
+	padding: 1em;
+	margin-bottom: 1.3em;
+}
+
+#checkout-order-form legend {
+	padding: 0.3em;
+	background: #dce9bd;
+    border-top: 2px solid #38512e;
+    border-bottom: 2px solid #38512e;
+    border-left: 2px solid #38512e;
+    border-radius: 3px;
+    color: black;
+}
+
+#checkout-order-form div {
+	margin-bottom: 1em;
+}
+
+#checkout-order-form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.3em;
+	text-align: left;
+}
+
+#checkout-order-form input[type="text"], #checkout-order-form input[type="email"] {
+	width: 200px;
+	display: block;
+	background: #fff;
+	border: 2px solid #3b1849;
+	border-radius: 4px;
+	padding: 0.3em;
+}
+
+#checkout-order-form select {
+	width: 200px;
+	display: block;
+}
+
+.continue a{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+	background-color: #38512e;
+    border-radius: 10px;
+	text-decoration: none;
+    padding: 10px 25px;
+    transition: all ease 0.6s;
+    color: #fff;
+}
+
+.continue a:hover{
+    padding: 20px 45px;
+    background-color: #dce9bd;
+    transition: all ease 0.6s;
+    color: #000;
+}
+
+
+
+/*Loader CSS*/
+
+.loader{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F7F9F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader > img{
+    width: 120px;
+    height: 120px;
+}
+.loader.hidden{
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+}
+
+.circle{
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999999999;
+}
