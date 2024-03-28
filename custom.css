@@ -156,15 +156,16 @@ nav{
 }
 
 .carItem1{
-    background-image: url("img/banner/img1.jpg");
+    background-image: url("img/banner/img9.jpg");
 
 }
 .carItem2{
-    background-image: url("img/banner/img2.jpeg");
+    background-image: url("img/banner/img4.jpg");
 }
 .carItem3{
-    background-image: url("img/banner/img3.jpg");
+    background-image: url("img/banner/img2.jpg");
 }
+
 .innerBanner{
     position: absolute;
     top: 50%;
