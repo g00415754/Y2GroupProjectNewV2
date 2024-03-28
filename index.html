@@ -317,23 +317,24 @@
     </div>
   </div>
   
-  <form class="form mt-3" onsubmit="return validate()"> <!--Contact Form-->
+  <form action="https://api.web3forms.com/submit" method="POST" class="form mt-3" onsubmit="return validate()"> <!--Contact Form-->
     <h1>Contact Us</h1> 
 
-    <div class="mb-3"> <!--Name Input-->
-      <label for="exampleInputEmail1" class="form-label" for="fn">Enter your name</label>
-      <input type="text" class="form-control" placeholder="Enter your name" id="fn">
-    </div>
+    <input type="hidden" name="access_key" value="ce81e3de-3bc9-4aef-a7d4-083383a1a556"> <!--Change public key to change linked email-->
+     <!--Name Input-->
+      <label for="exampleInputEmail1" class="form-label mt-3" for="fn">Enter your name</label>
+      <input type="text" class="form-control" placeholder="Enter your name" id="fn" name="name">
+    
 
-    <div class="mb-3"> <!--Email Input-->
-      <label class="form-label" for="emailAddr">Enter your email address</label>
-      <input type="email" class="form-control" placeholder="Enter email" id="emailAddr">
-    </div>
+    <!--Email Input-->
+      <label class="form-label mt-3" for="emailAddr">Enter your email address</label>
+      <input type="email" class="form-control" placeholder="Enter email" id="emailAddr" name="email">
+    
 
-    <div class="mb-3"> <!--Text Input-->
-        <label for="floatingTextarea" class="form-label" for="textar">Enter your message</label>
-        <textarea class="form-control" id="textar" placeholder="Enter your message" id="floatingTextarea" style="min-height: 150px;"></textarea>
-    </div>
+    <!--Text Input-->
+        <label for="floatingTextarea" class="form-label mt-3" for="textar">Enter your message</label>
+        <textarea class="form-control" id="textar" placeholder="Enter your message" id="floatingTextarea" style="min-height: 150px;" name="message"></textarea>
+    
 
     <button type="submit" class="btn btn-primary mt-4 mb-5 apadding">Submit</button>
   </form>
