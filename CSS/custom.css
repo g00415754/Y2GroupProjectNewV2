@@ -156,14 +156,14 @@ nav{
 }
 
 .carItem1{
-    background-image: url("img/banner/img9.jpg");
+    background-image: url("../img/banner/img9.jpg");
 
 }
 .carItem2{
-    background-image: url("img/banner/img4.jpg");
+    background-image: url("../img/banner/img4.jpg");
 }
 .carItem3{
-    background-image: url("img/banner/img2.jpg");
+    background-image: url("../img/banner/img2.jpg");
 }
 
 .innerBanner{
@@ -363,19 +363,19 @@ ol>li>a{
     background-size: cover;
 }
 .parallax1{
-    background-image: url("img/parallaxImg/img1.jpg");
+    background-image: url("../img/parallaxImg/img1.jpg");
 }
 .parallax2{
-    background-image: url("img/parallaxImg/img2.jpg");
+    background-image: url("../img/parallaxImg/img2.jpg");
 }
 .parallax3{
-    background-image: url("img/parallaxImg/img3.jpg");
+    background-image: url("../img/parallaxImg/img3.jpg");
 }
 .parallax4{
-    background-image: url("img/parallaxImg/img4.jpg");
+    background-image: url("../img/parallaxImg/img4.jpg");
 }
 .parallax5{
-    background-image: url("img/parallaxImg/img5.jpg");
+    background-image: url("../img/parallaxImg/img5.jpg");
 }
 
 
