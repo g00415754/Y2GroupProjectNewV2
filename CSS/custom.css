@@ -169,7 +169,6 @@ nav{
 @media only screen and (max-width: 425px) {
     .carItem1{
         background-image: url("../img/banner/img9-mobile.jpg");
-    
     }
     .carItem2{
         background-image: url("../img/banner/img4-mobile.jpg");
@@ -186,11 +185,9 @@ nav{
     transform: translate(-50%,-50%);
     color: #fff;
 }
-.innerBanner h1{
-    font-size: 60px;
-}
+
 .innerBanner a{
-    padding: 15px 35px;
+    padding: 15px 25px;
     border: 2px solid #fff;
     color: #000;
     border-radius: 10px;
