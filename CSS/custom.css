@@ -166,6 +166,19 @@ nav{
     background-image: url("../img/banner/img2.jpg");
 }
 
+@media only screen and (max-width: 425px) {
+    .carItem1{
+        background-image: url("../img/banner/img9-mobile.jpg");
+    
+    }
+    .carItem2{
+        background-image: url("../img/banner/img4-mobile.jpg");
+    }
+    .carItem3{
+        background-image: url("../img/banner/img2-mobile.jpg");
+    }
+}
+
 .innerBanner{
     position: absolute;
     top: 50%;
@@ -604,3 +617,9 @@ ol>li>a{
     pointer-events: none;
     z-index: 999999999;
 }
+
+@media only screen and (max-width: 768px) {
+    .circle{
+    display: none;
+    }
+    }
