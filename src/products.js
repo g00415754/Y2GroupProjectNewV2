@@ -7,9 +7,17 @@ function increment(x){
         document.getElementById("quant").textContent = incr;
         sessionStorage.product1Qty = incr;
     }
+}
 
-    //slet minus = document.getElementsById("quant").value;
-    //let newMinus = minus + 1;
-
-    //document.getElementsById("quant").write = newMinus;
+function decrement(x){
+    if(x==1){
+        // flower garden earrings
+        let decr = Number(document.getElementById("quant").textContent);
+        decr--;
+        if(decr >= 0){
+            document.getElementById("quant").textContent = decr;
+            sessionStorage.product1Qty = decr;
+        }
+        
+    }
 }
