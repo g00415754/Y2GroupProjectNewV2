@@ -83,9 +83,9 @@
                       <div class="price-quantity">
                         <h6>Price: €7</h6>
                         <div class="buttons">
-                            <i class="bi bi-dash-lg" onclick="decrement()"></i>
-                            <div class="quantity"></div>
-                            <i class="bi bi-plus-lg" onclick="increment()"></i>
+                            <i class="bi bi-dash-lg" onclick="decrement(1)"></i>
+                            <div class="quantity" id="quant">0</div>
+                            <i class="bi bi-plus-lg" onclick="increment(1)"></i>
                         </div>
                   </div>
                     </div>
@@ -664,6 +664,7 @@
   <div class="circle"></div>
   <div class="circle"></div>
   <script src="JS/loader.js"></script>
+  <script src="src/products.js"></script>
   <script src="JS/scrollToTop.js"></script>
   <script src="JS/cursor.js"></script>
 </body>
