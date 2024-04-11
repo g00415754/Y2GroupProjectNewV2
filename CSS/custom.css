@@ -270,7 +270,8 @@ nav{
     font-family: "Archivo", sans-serif;
 }
 /*Products Page CSS*/
-.prodbannerText{
+
+.prodbannerText h1{
     text-align: center;
     margin: 30px;
     font-family: "Reenie Beanie", cursive;
