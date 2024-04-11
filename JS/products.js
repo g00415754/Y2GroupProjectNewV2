@@ -1,4 +1,6 @@
 //let items = document.getElementById("cart").value;
+//let basket = JSON.parse(sessionStorageStorage.getItem("data")) || [];
+
 
 function increment(x){
     //alert(22)
@@ -9,6 +11,7 @@ function increment(x){
         document.getElementById("quant1").textContent = incr;
         sessionStorage.product1Qty = incr;
 
+
         document.getElementById("cart").textContent = sessionStorage.product1Qty;
     }
     if(x==2){
@@ -17,6 +20,7 @@ function increment(x){
         document.getElementById("quant2").textContent = incr;
         sessionStorage.product2Qty = incr;
 
+     
         document.getElementById("cart").textContent = sessionStorage.product2Qty;
     }
     if(x==3){
@@ -25,6 +29,7 @@ function increment(x){
         document.getElementById("quant3").textContent = incr;
         sessionStorage.product3Qty = incr;
 
+        
         document.getElementById("cart").textContent = sessionStorage.product3Qty;
     }
     if(x==4){
@@ -516,3 +521,17 @@ function decrement(x){
         
     }
 }
+
+
+
+
+/*
+document.getElementById("cart").textContent = basket;
+
+let calculation = () => {
+    let cartIcon = document.getElementById("cartAmount");
+    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+};
+
+calculation();
+*/
