@@ -152,7 +152,7 @@ nav{
 }
 .carItem1 span,.carItem2 span,.carItem3 span{
     font-family: "Reenie Beanie", cursive;
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
 .carItem1{
@@ -270,7 +270,8 @@ nav{
     font-family: "Archivo", sans-serif;
 }
 /*Products Page CSS*/
-.prodbannerText{
+
+.prodbannerText h1{
     text-align: center;
     margin: 30px;
     font-family: "Reenie Beanie", cursive;
