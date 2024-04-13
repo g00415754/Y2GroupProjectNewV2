@@ -21,6 +21,7 @@ nav{
     color: #fff;
     font-family: "Archivo", sans-serif;
     font-weight: 200;
+    font-size: 15px;
 }
 
 @media (min-width: 768px) {
@@ -202,6 +203,10 @@ nav{
     color: #000;
     transition: all ease 0.6s;
 }
+
+
+
+
 .productsBtn{
     width: 60%;
     margin: auto;
