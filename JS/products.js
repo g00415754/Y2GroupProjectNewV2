@@ -1,7 +1,6 @@
 //let items = document.getElementById("cart").value;
 //let basket = JSON.parse(sessionStorageStorage.getItem("data")) || [];
 
-
 function increment(x){
     //alert(22)
     if(x==1){
@@ -13,6 +12,9 @@ function increment(x){
 
 
         document.getElementById("cart").textContent = sessionStorage.product1Qty;
+
+        
+        sessionStorage.flowerGardenEarrings = document.getElementById("flowerGardenEarrings");
     }
     if(x==2){
         let incr = Number(document.getElementById("quant2").textContent);
@@ -22,6 +24,7 @@ function increment(x){
 
      
         document.getElementById("cart").textContent = sessionStorage.product2Qty;
+        sessionStorage.daisyEarrings = document.getElementById("daisyEarrings");
     }
     if(x==3){
         let incr = Number(document.getElementById("quant3").textContent);
@@ -524,6 +527,14 @@ function decrement(x){
 
 
 
+function calculate(){
+    let num = Number(sessionStorage.product1Qty.value + sessionStorage.product2Qty.value + sessionStorage.product3Qty.value+ sessionStorage.product4Qty.value+
+        sessionStorage.product5Qty.value + sessionStorage.product6Qty.value + sessionStorage.product7Qty.value);
+
+    Number(document.getElementById("cart").textContent) = num;
+}
+
+calculate();
 
 /*
 document.getElementById("cart").textContent = basket;
