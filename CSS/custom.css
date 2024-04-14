@@ -157,14 +157,14 @@ nav{
 }
 
 .carItem1{
-    background-image: url("../img/banner/banner1.png");
+    background-image: url("../img/banner/img9.jpg");
 
 }
 .carItem2{
-    background-image: url("../img/banner/banner2.png");
+    background-image: url("../img/banner/img4.jpg");
 }
 .carItem3{
-    background-image: url("../img/banner/banner3.png");
+    background-image: url("../img/banner/img2.jpg");
 }
 
 @media only screen and (max-width: 425px) {
@@ -323,7 +323,12 @@ ul.productsMenu {
     margin-left: 15vw;
 
 }
-
+@media only screen and (max-width: 450px) {
+    ul.productsMenu li{
+        font-size: 12px;
+    
+    }
+}
 
 /*FAQ Page CSS*/
 .linksHeader{
