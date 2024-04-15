@@ -49,8 +49,14 @@ function checkAddress(){
 document.getElementById("order_con_address").innerHTML = sessionStorage.Address;
 
 function checkZIP(){
-    let zip = document.getElementById("zip").value;
-    sessionStorage.ZIP=zip;
+    let zip = document.getElementById("zip").value.length;
+    if(zip != 7){
+        alert("Invalid ZIP/EIR code");
+        return false
+    }else{
+        sessionStorage.ZIP=zip;
+        return true;
+    }   
 }
 document.getElementById("order_con_zip").innerHTML = sessionStorage.ZIP;
 
