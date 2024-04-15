@@ -288,11 +288,24 @@ nav{
     font-family: "Archivo", sans-serif;
 }
 /*Products Page CSS*/
-
+/*
+.productsBanner{
+    background-image: url("../img/banner/img4.jpg");
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+*/
 .prodbannerText h1{
     text-align: center;
     margin: 30px;
     font-family: "Reenie Beanie", cursive;
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff*/
 }
 .heading{
     background-color: #dce9bd;
