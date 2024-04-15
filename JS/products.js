@@ -307,6 +307,10 @@ function decrement(x){
 
             sessionStorage.flowerGardenEarrings = document.getElementById("FlowerGardenEarrings");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("flowerGardenEarrings");
+            sessionStorage.removeItem("product1Qty");
+        }
         
     }
     if(x==2){
@@ -320,6 +324,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.daisyEarrings = document.getElementById("DaisyEarrings");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("daisyEarrings");
+            sessionStorage.removeItem("product2Qty");
         }
         
     }
@@ -335,6 +343,11 @@ function decrement(x){
 
             sessionStorage.purpleDropEarringsShort =document.getElementById("PurpleDropEarringsShort");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("purpleDropEarringsShort");
+            sessionStorage.removeItem("product3Qty");
+        }
+        
         
     }
     if(x==4){
@@ -349,6 +362,10 @@ function decrement(x){
 
             sessionStorage.atomEarrings  =document.getElementById("AtomEarrings");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("atomEarrings");
+            sessionStorage.removeItem("product4Qty");
+        }
         
     }
     if(x==5){
@@ -361,6 +378,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.headgehogEarrings = document.getElementById("HeadgehogEarrings");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("headgehogEarrings");
+            sessionStorage.removeItem("product5Qty");
         }
         
     }
@@ -375,6 +396,10 @@ function decrement(x){
 
             sessionStorage.ladybirdEarrings = document.getElementById("LadybirdEarrings");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("ladybirdEarrings");
+            sessionStorage.removeItem("product6Qty");
+        }
         
     }
     if(x==7){
@@ -387,6 +412,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.prideEarringsLong =document.getElementById("PrideEarringsLong");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("prideEarringsLong");
+            sessionStorage.removeItem("product7Qty");
         }
         
     }
@@ -401,6 +430,10 @@ function decrement(x){
 
             sessionStorage.pinkFlowerFairyEarrings =document.getElementById("PinkFlowerFairyEarrings");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("pinkFlowerFairyEarrings");
+            sessionStorage.removeItem("product8Qty");
+        }
         
     }
     if(x==9){
@@ -413,6 +446,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.greenDropEarrings = document.getElementById("GreenDropEarrings");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("greenDropEarrings");
+            sessionStorage.removeItem("product9Qty");
         }
         
     }
@@ -427,6 +464,10 @@ function decrement(x){
 
             sessionStorage.autumnEarrings = document.getElementById("AutumnEarrings");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("autumnEarrings");
+            sessionStorage.removeItem("product10Qty");
+        }
         
     }
     if(x==11){
@@ -439,6 +480,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.ladybugEarringsLong = document.getElementById("LadybugEarringsLong");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("ladybugEarringsLong");
+            sessionStorage.removeItem("product11Qty");
         }
         
     }
@@ -453,6 +498,10 @@ function decrement(x){
 
             sessionStorage.spookyEarrings = document.getElementById("SpookyEarrings");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("spookyEarrings");
+            sessionStorage.removeItem("product12Qty");
+        }
         
     }
     if(x==13){
@@ -465,6 +514,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.acornPendant =document.getElementById("AcornPendant");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("acornPendant");
+            sessionStorage.removeItem("product13Qty");
         }
         
     }
@@ -479,6 +532,10 @@ function decrement(x){
 
             sessionStorage.amethystPendant = document.getElementById("AmethystPendant");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("amethystPendant");
+            sessionStorage.removeItem("product14Qty");
+        }
         
     }
     if(x==15){
@@ -491,6 +548,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.daisyPendant = document.getElementById("DaisyPendant");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("daisyPendant");
+            sessionStorage.removeItem("product15Qty");
         }
         
     }
@@ -505,6 +566,10 @@ function decrement(x){
 
             sessionStorage.whiteFlowerPendant = document.getElementById("WhiteFlowerPendant");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("whiteFlowerPendant");
+            sessionStorage.removeItem("product16Qty");
+        }
         
     }
     if(x==17){
@@ -517,6 +582,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.hedgehogPendant = document.getElementById("HedgehogPendant");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("hedgehogPendant");
+            sessionStorage.removeItem("product17Qty");
         }
         
     }
@@ -531,6 +600,10 @@ function decrement(x){
 
             sessionStorage.moonPendant =  document.getElementById("MoonPendant");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("moonPendant");
+            sessionStorage.removeItem("product18Qty");
+        }
         
     }
     if(x==19){
@@ -543,6 +616,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.atomPendant = document.getElementById("AtomPendant");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("atomPendant");
+            sessionStorage.removeItem("product19Qty");
         }
         
     }
@@ -557,6 +634,10 @@ function decrement(x){
 
             sessionStorage.mermaidPendant =document.getElementById("MermaidPendant");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("mermaidPendant");
+            sessionStorage.removeItem("product20Qty");
+        }
         
     }
     if(x==21){
@@ -569,6 +650,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.irishUnakite = document.getElementById("IrishUnakite");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("irishUnakite");
+            sessionStorage.removeItem("product21Qty");
         }
         
     }
@@ -583,6 +668,10 @@ function decrement(x){
 
             sessionStorage.irishQuartz = document.getElementById("IrishQuartz");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("irishQuartz");
+            sessionStorage.removeItem("product22Qty");
+        }
         
     }
     if(x==23){
@@ -595,6 +684,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.irishUnite2 = document.getElementById("IrishUnite2");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("irishUnite2");
+            sessionStorage.removeItem("product23Qty");
         }
         
     }
@@ -609,6 +702,10 @@ function decrement(x){
 
             sessionStorage.smokeyQuartz = document.getElementById("SmokeyQuartz");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("smokeyQuartz");
+            sessionStorage.removeItem("product24Qty");
+        }
         
     }
     if(x==25){
@@ -621,6 +718,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.irishGoethite = document.getElementById("IrishGoethite");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("irishGoethite");
+            sessionStorage.removeItem("product25Qty");
         }
         
     }
@@ -635,6 +736,10 @@ function decrement(x){
 
             sessionStorage.irishConnelite = document.getElementById("IrishConnelite");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("irishConnelite");
+            sessionStorage.removeItem("product26Qty");
+        }
         
     }
     if(x==27){
@@ -648,6 +753,10 @@ function decrement(x){
 
             sessionStorage.crystalTealight = document.getElementById("CrystalTealight");
         }
+        if(decr == 0){
+            sessionStorage.removeItem("crystalTealight");
+            sessionStorage.removeItem("product27Qty");
+        }
         
     }
     if(x==28){
@@ -660,6 +769,10 @@ function decrement(x){
             document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.prehniteHanging = document.getElementById("PrehniteHanging");
+        }
+        if(decr == 0){
+            sessionStorage.removeItem("prehniteHanging");
+            sessionStorage.removeItem("product28Qty");
         }
         
     }
