@@ -788,8 +788,8 @@ document.getElementById("shoppingCartTable").innerHTML = `
 <tr> 
 <th scope="row">1</th>
 <td><div id="item1"></div></td>
-<td><div id="price1"></div></td>
 <td><div id="quant1"></div></td>
+<td><div id="price1"></div></td>
 </tr>
 <tr>
 <!--

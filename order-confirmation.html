@@ -72,8 +72,8 @@
 
     <h1 class="mt-4" style="text-align: center;font-family: Reenie Beanie, cursive;" >Order Confirmed</h1> 
 
+    <h5 style="margin: 25px;" class="ms-5 mt-5">Order confirmed to be shipped to:</h5>
     <div class="order-conf-header ms-5 mt-4" style="font-family: Archivo, sans-serif;">
-    <h5 style="margin: 25px;">Order confirmed to to be shipped to:</h5>
     <p id="order_con_name"></p>
     <p id="order_con_address"></p>
     <p id = "order_con_city"></p>
@@ -115,16 +115,35 @@
         </div>-->
     </div>
 
+    <h5 style="margin: 25px;" class="ms-5 mt-5">Items to be shipped:</h5>
+    <div class="order-conf-header ms-5 mt-4" style="font-family: Archivo, sans-serif;"></div>
+      <table class="table" style="width: 80%; margin: auto">
+        <thead>
+          <tr>
+            <th scope="col testing"></th>
+            <th scope="col">Product</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Total Price</th>
+          
+          </tr>
+        </thead>
+        <tbody id="shoppingCartTable">
+          
+        </tbody>
+      </table>
+    </div>
+    
+
 
     <div class="continue mt-5" style="margin:0;font-family: Archivo, sans-serif;">
-        <a href="products.html">Continue Shopping</a>
+        <a href="products.html" class="mt-5 ms-2 mb-5 btn btn-success">Continue Shopping</a>
     </div>
 
     <br><br><br>
 
     <!--NEW FOOTER CODE-->
 
-<footer class="footer">
+<footer class="footer mt-5 ">
   <video class="footer_video" muted="" loop="" autoplay src="video/footer_video.mp4" type="video/mp4">
   </video>
   
@@ -221,6 +240,8 @@
   </footer>
 
     <script src="JS/loader.js"></script>
+    <script src="JS/products.js"></script>
+  
     <script src="JS/checkout.js"></script>
     <script type="text/javascript">(function(){d=document;s=d.createElement("script");s.src="https://widget.supportai.com/197f583e9ca9498.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 

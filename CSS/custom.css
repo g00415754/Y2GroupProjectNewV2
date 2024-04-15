@@ -427,6 +427,18 @@ ol>li>a{
 
 
 /*Shopping Cart Page CSS*/
+.cartButtons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
 .cart{
 	/*display: flex;*/
     height: fit-content;
@@ -587,6 +599,13 @@ ol>li>a{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+/*
+.continue a{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     width: auto;
     font-size: 20px;
@@ -604,7 +623,7 @@ ol>li>a{
     transition: all ease 0.6s;
     color: #000;
 }
-
+*/
 
 
 /*Loader CSS*/
