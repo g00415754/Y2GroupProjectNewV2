@@ -14,8 +14,14 @@ const y = new Date();
 let year = y.getFullYear();
 
 
+function checkName(){
+    let name = document.getElementById("nname").value;
+    sessionStorage.Name=name;
+}
+document.getElementById("order_con_name").innerHTML = sessionStorage.Name;
+
 function checkEmail(){
-    let x = document.getElementById("email");
+    let x = document.getElementById("email").value;
     let y = x.value.indexOf("@");
     let z = x.value.indexOf(".");
 
@@ -23,9 +29,42 @@ function checkEmail(){
         alert("Invalid Email Address");
         return false
     }else{
+        let email = x.value;
+        sessionStorage.Email=email;
         return true
     }
+    
 }
+
+function checkCity(){
+    let city = document.getElementById("city").value;
+    sessionStorage.City=city;
+}
+document.getElementById("order_con_city").innerHTML = sessionStorage.City;
+
+function checkAddress(){
+    let address = document.getElementById("address").value;
+    sessionStorage.Address=address;
+}
+document.getElementById("order_con_address").innerHTML = sessionStorage.Address;
+
+function checkZIP(){
+    let zip = document.getElementById("zip").value;
+    if(zip.length != 7){
+        alert("Invalid ZIP/EIR code");
+        return false
+    }else{
+        sessionStorage.ZIP=zip;
+        return true;
+    }   
+}
+document.getElementById("order_con_zip").innerHTML = sessionStorage.ZIP;
+
+function checkCountry(){
+    let country = document.getElementById("country").value;
+    sessionStorage.Country=country;
+}
+document.getElementById("order_con_country").innerHTML = sessionStorage.Country;
 
 function checkSEmail(){
     let x = document.getElementById("semail");
