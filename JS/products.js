@@ -13,7 +13,7 @@ function increment(x){
         document.getElementById("cart").textContent = Number(totalContent) + 1;
 
         
-        sessionStorage.flowerGardenEarrings = document.getElementById("FlowerGardenEarrings");
+        sessionStorage.flowerGardenEarrings = "Flower Garden Earrings";
     }
     if(x==2){
         let incr = Number(document.getElementById("quant2").textContent);
@@ -777,6 +777,154 @@ function decrement(x){
         
     }
 }
+
+function empty(){
+    sessionStorage.clear();
+    //document.getElementById("item1").innerHTML = "Cart is Empty";
+    document.getElementById("shoppingCartTable").innerHTML = ``;
+}
+
+document.getElementById("shoppingCartTable").innerHTML = `
+<tr> 
+<th scope="row">1</th>
+<td><div id="item1"></div></td>
+<td><div id="price1"></div></td>
+<td><div id="quant1"></div></td>
+</tr>
+<tr>
+<!--
+<th scope="row">2</th>
+<td><div id="item2"></div></td>
+<td><div id="price2"></div></td>
+<td><div id="quant2"></div></td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td><div id="item3"></div></td>
+<td><div id="price3"></div></td>
+<td><div id="quant3"></div></td>
+</tr>-->
+`;
+
+let item1 = document.getElementById("item1").textContent;
+if(sessionStorage.product1Qty > 0){
+    document.getElementById("item1").innerHTML = "Flower Garden Earrings";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product1Qty * 7);
+    document.getElementById("quant1").innerHTML = sessionStorage.product1Qty;
+}else if(sessionStorage.product2Qty > 0){
+    document.getElementById("item1").innerHTML = "Daisy Earrings";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product2Qty * 7);
+    document.getElementById("quant1").innerHTML = sessionStorage.product2Qty;
+}else if(sessionStorage.product3Qty > 0){
+    document.getElementById("item1").innerHTML = "Purple Drop Earrings";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product3Qty * 5);
+    document.getElementById("quant1").innerHTML = sessionStorage.product3Qty;
+}else if(sessionStorage.product4Qty > 0){
+    document.getElementById("item1").innerHTML = "Atom Earrings";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product4Qty * 6);
+    document.getElementById("quant1").innerHTML = sessionStorage.product4Qty;
+}else if(sessionStorage.product5Qty > 0){
+    document.getElementById("item1").innerHTML = "Hedgehog & Leaf Earrings";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product5Qty * 11);
+    document.getElementById("quant1").innerHTML = sessionStorage.product5Qty;
+}else if(sessionStorage.product6Qty > 0){
+    document.getElementById("item1").innerHTML = "Ladybird Earrings - Short in Gold";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product6Qty * 7);
+    document.getElementById("quant1").innerHTML = sessionStorage.product6Qty;
+}else if(sessionStorage.product7Qty > 0){
+    document.getElementById("item1").innerHTML = "Pride Earrings - Long";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product7Qty * 6);
+    document.getElementById("quant1").innerHTML = sessionStorage.product7Qty;
+}else if(sessionStorage.product8Qty > 0){
+    document.getElementById("item1").innerHTML = "Pink Flower Fairy Earrings";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product8Qty * 8);
+    document.getElementById("quant1").innerHTML = sessionStorage.product8Qty;
+}else if(sessionStorage.product9Qty > 0){
+    document.getElementById("item1").innerHTML = "Green Drop Earrings - Short";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product9Qty * 5);
+    document.getElementById("quant1").innerHTML = sessionStorage.product9Qty;
+}else if(sessionStorage.product10Qty > 0){
+    document.getElementById("item1").innerHTML = "Autumn Earrings - Short with Clasps";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product10Qty * 5);
+    document.getElementById("quant1").innerHTML = sessionStorage.product10Qty;
+}else if(sessionStorage.product11Qty > 0){
+    document.getElementById("item1").innerHTML = "Ladybug Earrings - Long in Silver";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product11Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product11Qty;
+}else if(sessionStorage.product12Qty > 0){
+    document.getElementById("item1").innerHTML = "Spooky Earrings - Short with Clasps";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product12Qty * 5);
+    document.getElementById("quant1").innerHTML = sessionStorage.product12Qty;
+}else if(sessionStorage.product13Qty > 0){
+    document.getElementById("item1").innerHTML = "Acorn Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product13Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product13Qty;
+}else if(sessionStorage.product14Qty > 0){
+    document.getElementById("item1").innerHTML = "Amethyst Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product14Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product14Qty;
+}else if(sessionStorage.product15Qty > 0){
+    document.getElementById("item1").innerHTML = "Daisy Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product15Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product15Qty;
+}else if(sessionStorage.product16Qty > 0){
+    document.getElementById("item1").innerHTML = "White Flower Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product16Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product16Qty;
+}else if(sessionStorage.product17Qty > 0){
+    document.getElementById("item1").innerHTML = "Hedgehog & Leaf Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product17Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product17Qty;
+}else if(sessionStorage.product18Qty > 0){
+    document.getElementById("item1").innerHTML = "Moon Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product18Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product18Qty;
+}else if(sessionStorage.product19Qty > 0){
+    document.getElementById("item1").innerHTML = "AtomPendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product19Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product19Qty;
+}else if(sessionStorage.product20Qty > 0){
+    document.getElementById("item1").innerHTML = "Mermaid Pendant";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product20Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product20Qty;
+}else if(sessionStorage.product21Qty > 0){
+    document.getElementById("item1").innerHTML = "Irish Unakite (Type 1)";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product21Qty * 8);
+    document.getElementById("quant1").innerHTML = sessionStorage.product21Qty;
+}else if(sessionStorage.product22Qty > 0){
+    document.getElementById("item1").innerHTML = "Irish Quartz";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product22Qty * 20);
+    document.getElementById("quant1").innerHTML = sessionStorage.product22Qty;
+}else if(sessionStorage.product23Qty > 0){
+    document.getElementById("item1").innerHTML = "Irish Unakite (Type 2)";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product23Qty * 8);
+    document.getElementById("quant1").innerHTML = sessionStorage.product23Qty;
+}else if(sessionStorage.product24Qty > 0){
+    document.getElementById("item1").innerHTML = "Irish Amethyst with Smokey Quartz";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product24Qty * 10);
+    document.getElementById("quant1").innerHTML = sessionStorage.product24Qty;
+}else if(sessionStorage.product25Qty > 0){
+    document.getElementById("item1").innerHTML = "Irish Goethite with Manganese Minerals";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product25Qty * 16);
+    document.getElementById("quant1").innerHTML = sessionStorage.product25Qty;
+}else if(sessionStorage.product26Qty > 0){
+    document.getElementById("item1").innerHTML = "Irish Connelite with Langite";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product26Qty * 28);
+    document.getElementById("quant1").innerHTML = sessionStorage.product26Qty;
+}else if(sessionStorage.product27Qty > 0){
+    document.getElementById("item1").innerHTML = "Crystal Tealight";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product27Qty * 1);
+    document.getElementById("quant1").innerHTML = sessionStorage.product27Qty;
+}else if(sessionStorage.product28Qty > 0){
+    document.getElementById("item1").innerHTML = "Prehnite Hanging";
+    document.getElementById("price1").innerHTML = "€" + Number(sessionStorage.product28Qty * 2.50);
+    document.getElementById("quant1").innerHTML = sessionStorage.product28Qty;
+}
+
+
+
+
+
 
 
 /*
