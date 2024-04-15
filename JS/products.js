@@ -330,7 +330,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant3").textContent = decr;
             sessionStorage.product3Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product3Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.purpleDropEarringsShort =document.getElementById("PurpleDropEarringsShort");
         }
         
@@ -342,7 +344,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant4").textContent = decr;
             sessionStorage.product4Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product4Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.atomEarrings  =document.getElementById("AtomEarrings");
         }
         
@@ -353,7 +357,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant5").textContent = decr;
             sessionStorage.product5Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product5Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.headgehogEarrings = document.getElementById("HeadgehogEarrings");
         }
         
@@ -364,7 +370,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant6").textContent = decr;
             sessionStorage.product6Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product6Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.ladybirdEarrings = document.getElementById("LadybirdEarrings");
         }
         
@@ -375,7 +383,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant7").textContent = decr;
             sessionStorage.product7Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product7Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.prideEarringsLong =document.getElementById("PrideEarringsLong");
         }
         
@@ -386,7 +396,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant8").textContent = decr;
             sessionStorage.product8Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product8Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.pinkFlowerFairyEarrings =document.getElementById("PinkFlowerFairyEarrings");
         }
         
@@ -397,7 +409,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant9").textContent = decr;
             sessionStorage.product9Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product9Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.greenDropEarrings = document.getElementById("GreenDropEarrings");
         }
         
@@ -408,7 +422,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant10").textContent = decr;
             sessionStorage.product10Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product10Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.autumnEarrings = document.getElementById("AutumnEarrings");
         }
         
@@ -419,7 +435,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant11").textContent = decr;
             sessionStorage.product11Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product11Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.ladybugEarringsLong = document.getElementById("LadybugEarringsLong");
         }
         
@@ -430,7 +448,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant12").textContent = decr;
             sessionStorage.product12Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product12Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.spookyEarrings = document.getElementById("SpookyEarrings");
         }
         
@@ -441,7 +461,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant13").textContent = decr;
             sessionStorage.product13Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product13Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.acornPendant =document.getElementById("AcornPendant");
         }
         
@@ -452,7 +474,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant14").textContent = decr;
             sessionStorage.product14Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product14Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.amethystPendant = document.getElementById("AmethystPendant");
         }
         
@@ -463,7 +487,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant15").textContent = decr;
             sessionStorage.product15Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product15Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.daisyPendant = document.getElementById("DaisyPendant");
         }
         
@@ -474,7 +500,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant16").textContent = decr;
             sessionStorage.product16Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product16Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.whiteFlowerPendant = document.getElementById("WhiteFlowerPendant");
         }
         
@@ -485,7 +513,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant17").textContent = decr;
             sessionStorage.product17Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product17Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.hedgehogPendant = document.getElementById("HedgehogPendant");
         }
         
@@ -496,7 +526,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant18").textContent = decr;
             sessionStorage.product18Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product18Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.moonPendant =  document.getElementById("MoonPendant");
         }
         
@@ -507,7 +539,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant19").textContent = decr;
             sessionStorage.product19Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product19Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.atomPendant = document.getElementById("AtomPendant");
         }
         
@@ -518,7 +552,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant20").textContent = decr;
             sessionStorage.product20Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product20Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.mermaidPendant =document.getElementById("MermaidPendant");
         }
         
@@ -529,7 +565,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant21").textContent = decr;
             sessionStorage.product21Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product21Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.irishUnakite = document.getElementById("IrishUnakite");
         }
         
@@ -540,7 +578,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant22").textContent = decr;
             sessionStorage.product22Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product22Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.irishQuartz = document.getElementById("IrishQuartz");
         }
         
@@ -551,7 +591,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant23").textContent = decr;
             sessionStorage.product23Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product23Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.irishUnite2 = document.getElementById("IrishUnite2");
         }
         
@@ -563,7 +605,7 @@ function decrement(x){
             document.getElementById("quant24").textContent = decr;
             sessionStorage.product24Qty = decr;
             let totalContent = document.getElementById("cart").textContent;
-            document.getElementById("cart").textContent = totalContent + sessionStorage.product24Qty;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
 
             sessionStorage.smokeyQuartz = document.getElementById("SmokeyQuartz");
         }
@@ -576,7 +618,8 @@ function decrement(x){
             document.getElementById("quant25").textContent = decr;
             sessionStorage.product25Qty = decr;
             let totalContent = document.getElementById("cart").textContent;
-            document.getElementById("cart").textContent = totalContent + sessionStorage.product25Qty;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.irishGoethite = document.getElementById("IrishGoethite");
         }
         
@@ -587,7 +630,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant26").textContent = decr;
             sessionStorage.product26Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product26Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.irishConnelite = document.getElementById("IrishConnelite");
         }
         
@@ -598,7 +643,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant27").textContent = decr;
             sessionStorage.product27Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product27Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.crystalTealight = document.getElementById("CrystalTealight");
         }
         
@@ -609,7 +656,9 @@ function decrement(x){
         if(decr >= 0){
             document.getElementById("quant28").textContent = decr;
             sessionStorage.product28Qty = decr;
-            document.getElementById("cart").textContent = sessionStorage.product28Qty;
+            let totalContent = document.getElementById("cart").textContent;
+            document.getElementById("cart").textContent = Number(totalContent) - 1;
+
             sessionStorage.prehniteHanging = document.getElementById("PrehniteHanging");
         }
         
