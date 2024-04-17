@@ -83,7 +83,7 @@
       <h1 class="checkoutHeader mt-4" style="text-align: center; font-family: Reenie Beanie, cursive;">Checkout</h1> 
     </div>
     
-    <form method="get" id="checkout-order-form" onsubmit="Validate()">
+    <form method="get" id="checkout-order-form" onsubmit="return Validate()">
         <h2><i class="bi bi-truck"></i>Your Details</h2>
         <fieldset id="fieldset-billing">
         <legend class="mt-3 mb-4">Billing</legend>
@@ -116,8 +116,10 @@
         <div class="icon-container">
           <i class="fa-brands fa-paypal"></i>
         </div>
-        <label for="cname">Name on Card<span id="cname-warning" class="form-warning"></span></label>
-        <input type="text" id="cname" name="cardname" placeholder="Yeti MacBoat">
+        <div>
+          <label for="cname">Name on card</label>
+          <input type="text" name="cname" id="cname" data-type="string" placeholder="Name">
+      </div>
         <label for="ccnum">Credit card number<span id="ccnum-warning" class="form-warning"></span></label>
         <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
         <label for="expmonth">Expiration Month</label>

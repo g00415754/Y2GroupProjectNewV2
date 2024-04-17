@@ -5,74 +5,83 @@ let year = y.getFullYear();
 let message = ""
 let invalid = false;
 
-function validate(){
+function Validate(){
+    //Billing Validation//
     let name = document.getElementById("nname").value;
-    if(name == null){
-        message += "Please Enter Your Name\n"
+    if(name.length == 0){
+        message += "Please enter Name for billing\n"
         invalid = true;
     }else{
         sessionStorage.Name=name;
     }
+    document.getElementById("order_con_name").innerHTML = sessionStorage.Name;
     
 
     let email = document.getElementById("email").value;
     if(email.indexOf(".") == -1 || email.indexOf("@") == -1){
-        message += "Invalid Email Address\n"
+        message += "Invalid Email Address for billing\n"
         invalid = true;
     }else{
         sessionStorage.Email=email;
     }
 
     let city = document.getElementById("city").value;
-    if(city = ""){
-        message += "Please Enter City\n"
+    if(city.length == 0){
+        message += "Please enter City for billing\n"
         invalid = true;
     }else{
         sessionStorage.City=city;
     }
+    document.getElementById("order_con_city").innerHTML = sessionStorage.City;
     
 
     let address = document.getElementById("address").value
-    if(address = ""){
-        message += "Please Enter Address\n"
+    if(address.length == 0){
+        message += "Please enter Address for billing\n"
         invalid = true;
     }else{
         sessionStorage.Address=address;
     }
+    document.getElementById("order_con_address").innerHTML = sessionStorage.Address;
 
     let zip = document.getElementById("zip").value;
     if(zip.length !=7){
-        message += "Invalid ZIP code\n"
+        message += "Invalid ZIP code for billing\n"
         invalid = true;
     }else{
         sessionStorage.ZIP=zip;
     }
+    document.getElementById("order_con_zip").innerHTML = sessionStorage.ZIP;
 
     let country = document.getElementById("country").value;
-    if(country = ""){
-        message += "Please Enter Country\n"
+    if(country.length == 0){
+        message += "Please enter Country for billing\n"
         invalid = true;
     }else{
         sessionStorage.Country=country;
     }
 
-    let cname = document.getElementById("cname")
-    if(cname = ""){
-        message += "Please Enter Name on your Card\n"
+    document.getElementById("order_con_country").innerHTML = sessionStorage.Country;
+
+    //Card Validation//
+
+    let cname = document.getElementById("cname").value
+    if(cname.length == 0){
+        message += "Please enter Name on card\n"
         invalid = true;
     }else{
         sessionStorage.cName=cname;
     }
 
-    let ccnum = document.getElementById("ccnum")
-    if(ccnum = ""){
-        message += "Please Enter Number on your Card\n"
+    let ccnum = document.getElementById("ccnum").value
+    if(ccnum.length == 0){
+        message += "Please enter number on card\n"
         invalid = true;
     }else if(ccnum.length != 12){
         message += "Invalid Card Number\n"
         invalid = true;
     }else{
-        sessionStorage.ccNum=ccnum;
+        
     }
 
     let expmonth = document.getElementById("expmonth").value
@@ -95,24 +104,69 @@ function validate(){
     if(cvv.length != 3){
         message += "Invalid CVV number\n"
         invalid = true;
-    }else{}
-
-}
-if(invalid){
-    alert("wrong")
-}else{
-}
-    document.getElementById("order_con_name").innerHTML = sessionStorage.Name;
-
-function checkSEmail(){
-    let x = document.getElementById("semail");
-    let y = x.value.indexOf("@");
-    let z = x.value.indexOf(".");
-
-    if(y == -1 || z == -1){
-        alert("Invalid Email Address");
-        return false
     }else{
-        return true
     }
+
+    //Shipping Validation//
+
+    let sname = document.getElementById("sname").value;
+    if(sname.length == 0){
+        message += "Please enter Name for shipping\n"
+        invalid = true;
+    }else{
+        sessionStorage.sName=sname;
+    }
+
+    let semail = document.getElementById("semail").value;
+    if(semail.indexOf(".") == -1 || semail.indexOf("@") == -1){
+        message += "Invalid Email Address for shipping\n"
+        invalid = true;
+    }else{
+        sessionStorage.sEmail=semail;
+    }
+
+    let scity = document.getElementById("scity").value;
+    if(scity.length == 0){
+        message += "Please enter City for shippinh\n"
+        invalid = true;
+    }else{
+        sessionStorage.sCity=scity;
+    }
+    
+
+    let saddress = document.getElementById("saddress").value
+    if(saddress.length == 0){
+        message += "Please enter Address for shipping\n"
+        invalid = true;
+    }else{
+        sessionStorage.sAddress=saddress;
+    }
+
+    let szip = document.getElementById("szip").value;
+    if(szip.length !=7){
+        message += "Invalid ZIP code for shipping\n"
+        invalid = true;
+    }else{
+        sessionStorage.sZIP=szip;
+    }
+
+    let scountry = document.getElementById("scountry").value;
+    if(scountry.length == 0){
+        message += "Please enter Country for shipping\n"
+        invalid = true;
+    }else{
+        sessionStorage.sCountry=scountry;
+    }
+
+
+    if(invalid){
+        alert(message);
+        message = "";
+        return false;
+    }else{
+        window.location.href = "order-confirmation.html";
+        return true;
+    }
+    
 }
+
