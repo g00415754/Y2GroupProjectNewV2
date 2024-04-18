@@ -163,7 +163,6 @@ function Validate(){
         message = "";
         return false;
     }else{
-        window.location.href = "order-confirmation.html";
         return true;
     }
     
