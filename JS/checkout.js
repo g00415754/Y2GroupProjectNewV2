@@ -14,6 +14,7 @@ function Validate(){
     }else{
         sessionStorage.Name=name;
     }
+    document.getElementById("order_con_name").innerHTML = sessionStorage.Name;
     
 
     let email = document.getElementById("email").value;
@@ -31,6 +32,7 @@ function Validate(){
     }else{
         sessionStorage.City=city;
     }
+    document.getElementById("order_con_city").innerHTML = sessionStorage.City;
     
 
     let address = document.getElementById("address").value
@@ -40,6 +42,7 @@ function Validate(){
     }else{
         sessionStorage.Address=address;
     }
+    document.getElementById("order_con_address").innerHTML = sessionStorage.Address;
 
     let zip = document.getElementById("zip").value;
     if(zip.length !=7){
@@ -48,6 +51,7 @@ function Validate(){
     }else{
         sessionStorage.ZIP=zip;
     }
+    document.getElementById("order_con_zip").innerHTML = sessionStorage.ZIP;
 
     let country = document.getElementById("country").value;
     if(country.length == 0){
@@ -56,6 +60,8 @@ function Validate(){
     }else{
         sessionStorage.Country=country;
     }
+
+    document.getElementById("order_con_country").innerHTML = sessionStorage.Country;
 
     //Card Validation//
 
@@ -110,7 +116,6 @@ function Validate(){
     }else{
         sessionStorage.sName=sname;
     }
-    document.getElementById("order_con_name").innerHTML = sessionStorage.sName;
 
     let semail = document.getElementById("semail").value;
     if(semail.indexOf(".") == -1 || semail.indexOf("@") == -1){
@@ -127,7 +132,6 @@ function Validate(){
     }else{
         sessionStorage.sCity=scity;
     }
-    document.getElementById("order_con_name").innerHTML = sessionStorage.sCity;
     
 
     let saddress = document.getElementById("saddress").value
@@ -137,7 +141,6 @@ function Validate(){
     }else{
         sessionStorage.sAddress=saddress;
     }
-    document.getElementById("order_con_name").innerHTML = sessionStorage.sAddress;
 
     let szip = document.getElementById("szip").value;
     if(szip.length !=7){
@@ -146,7 +149,6 @@ function Validate(){
     }else{
         sessionStorage.sZIP=szip;
     }
-    document.getElementById("order_con_name").innerHTML = sessionStorage.sZIP;
 
     let scountry = document.getElementById("scountry").value;
     if(scountry.length == 0){
@@ -155,7 +157,6 @@ function Validate(){
     }else{
         sessionStorage.sCountry=scountry;
     }
-    document.getElementById("order_con_name").innerHTML = sessionStorage.sCountry;
 
 
     if(invalid){
