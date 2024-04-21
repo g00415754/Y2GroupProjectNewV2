@@ -1,13 +1,4 @@
-function validate(){
-    if(checkEmail() && 
-    checkExp() && 
-    checkCvv() && 
-    checkSEmail ()){
-        return true
-    }else{
-        return false
-    }
-}
+
 const m = new Date();
 let month = m.getMonth()+1;
 const y = new Date();
